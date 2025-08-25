@@ -56,3 +56,18 @@ Pro's of LangGraph
 - Store tools in tools list
 
 
+### File Structure
+react.py -> LLM initialization & tools list
+node.py -> agent reasoning function & tool nodes
+main.py -> Graph development
+
+
+### Simple Graph Creation Requirements
+- Initialize Agent Reasoning node
+- Set entry Point
+- Add ACT node
+- Set Conditional Edges
+- Create edges between ACT and Agent reasoning
+- Compile the graph
+- Draw the flow
+
