@@ -9,7 +9,7 @@ SYSTEM_MESSAGE = "You are a useful assistance that uses the tool to answer the q
 
 def run_agent_reasoning(state: MessagesState) -> MessagesState:
     "Run the agent reasoning code"
-    response = llm.invoke([{'role': 'SYSTEM', 'content': SYSTEM_MESSAGE, **state['messages']}])
+    response = llm.invoke([{'role': 'system', 'content': SYSTEM_MESSAGE}, *state['messages']])
 
     return {'messages': [response]}
 
