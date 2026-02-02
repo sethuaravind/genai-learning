@@ -2,6 +2,12 @@
 This repo is to learn the langchain implementaton, along with some fundamental featuers
 
 
+# Directories
+- LangGraph & LangGraph-1 - both are used for the basic langgraph method - use LangGraph-1 for better understanding
+- Reflection_Agent - Incomplete
+- Reflexion_agent - Incomplete
+
+
 # Table of Content
 
 - Vector DB
@@ -9,11 +15,11 @@ This repo is to learn the langchain implementaton, along with some fundamental f
 - PDF Reader
 - CSV Reader
 - LangGraph
+- Reflection Agent
 
 
 
-
-# LangGraph
+# LangGraph - Simple Example
 LangGraph is power library of Langchain that helps to create a flow for agentic AI to perform series of tasks.
 
 There are 6 types of code module
@@ -71,3 +77,29 @@ main.py -> Graph development
 - Compile the graph
 - Draw the flow
 
+
+# Reflection Agent
+Reflection agent improves the quality and success rate of the agent.
+
+## Template
+- Create generation prompt and reflection prompt
+- Create generation chain and reflection chain
+- Create generation node and reflection node
+- Define the graph
+- Create nodes
+- Set entry point
+- Set conditional edges
+- Set edges
+- Compile the graph
+- Draw the graph
+
+
+## Common Mistake
+- Use 'ChatMessagePromptTemplate' instead of 'ChatPromptTemplate'
+
+## Code Structure
+- Chains -> contains reflection & generation agents
+- main -> Contain langgraph
+
+## Functions
+ChatTemplatePrompt.from_messages -> This is not in general function list -> input structure is [('{who uses}', '{message}'), {messageplaceholder}]
