@@ -19,6 +19,14 @@ This repo is to learn the langchain implementaton, along with some fundamental f
 
 
 
+# Notes
+
+
+## File Reader
+
+URL        -    from langchain_community.document_loaders import WebBaseLoader
+
+
 # LangGraph - Simple Example
 LangGraph is power library of Langchain that helps to create a flow for agentic AI to perform series of tasks.
 
